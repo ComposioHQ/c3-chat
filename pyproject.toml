@@ -1,7 +1,7 @@
 [project]
 name = "c3-chat-py"
 version = "0.1.0"
-description = "Add your description here"
+description = "Chat application with Claude API and GitHub integration"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -19,3 +19,9 @@ dev = [
     "ipykernel>=6.29.5",
     "ipywidgets>=8.1.5",
 ]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
